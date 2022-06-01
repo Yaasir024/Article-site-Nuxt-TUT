@@ -1,6 +1,6 @@
 <template>
-  <nav>
-    <div>
+  <nav :style="isDarkMode ? {backgroundColor: 'rgb(73,73,72)'} : null">
+    <div :style="isDarkMode ? {color: 'white'} : null">
       <h1>Artikle</h1>
       <label class="switch">
         <input type="checkbox" />
@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-const {isDarkMode} = useDarkMode()
+const {isDarkMode, toggleDarkMode} = useDarkMode()
 </script>
 
 <style scoped>

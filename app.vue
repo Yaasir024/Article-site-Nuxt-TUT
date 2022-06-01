@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :style="isDarkMode ? {backgroundColor: 'black'} : null">
     <Nav />
     <Heading />
     <Cards />
@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-const {isDarkMode} = useDarkMode()
+const { isDarkMode } = useDarkMode()
 </script>
 
 <style>
