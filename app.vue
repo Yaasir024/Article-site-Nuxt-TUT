@@ -6,6 +6,10 @@
   </div>
 </template>
 
+<script setup lang="ts">
+const {isDarkMode} = useDarkMode()
+</script>
+
 <style>
 * {
   margin: 0;

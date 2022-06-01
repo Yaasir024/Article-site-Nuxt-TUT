@@ -10,6 +10,10 @@
   </nav>
 </template>
 
+<script setup lang="ts">
+const {isDarkMode} = useDarkMode()
+</script>
+
 <style scoped>
 nav {
   border-bottom: 1px solid rgba(73, 72, 72, 0.274);
