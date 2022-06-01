@@ -3,7 +3,7 @@
     <div :style="isDarkMode ? {color: 'white'} : null">
       <h1>Artikle</h1>
       <label class="switch">
-        <input type="checkbox" />
+        <input type="checkbox" v-model="isDarkMode" @click="toggleDarkMode" />
         <span class="slider round"></span>
       </label>
     </div>
